@@ -1,0 +1,11 @@
+.profile {
+    max-width: 670px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.profile img {
+    width: 670px;
+    height: 321px;
+    border-radius: 8px;
+}

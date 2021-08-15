@@ -1,0 +1,25 @@
+.navigation {
+    width: 225px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 10px 10px;
+}
+
+.item {
+    margin-bottom: 5px;
+}
+
+.item a {
+    color: black;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.item a:hover {
+    color: #2f9bc1;
+}
+
+.item a.active {
+    color: #2f9bc1;
+}

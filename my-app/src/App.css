@@ -1,0 +1,34 @@
+body {
+  background-color: #f0f0ed;
+}
+
+.main_wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*.nav {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*}*/
+
+.content_wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

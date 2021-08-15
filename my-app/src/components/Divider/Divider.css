@@ -1,0 +1,12 @@
+.divider {
+    max-width: 670px;
+    height: 15px;
+    background: #f7f7f7;
+    font-size: 14px;
+    color: #33363C;
+    padding: 15px 10px;
+    margin: 0 0 1px 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+

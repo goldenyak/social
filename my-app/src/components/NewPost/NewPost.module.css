@@ -1,0 +1,13 @@
+.main_wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.post_item {
+    margin-bottom: 10px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    padding: 10px;
+    color: #767676;
+}
