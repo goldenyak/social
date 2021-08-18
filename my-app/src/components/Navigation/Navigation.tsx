@@ -15,10 +15,10 @@ const Navigation = () => {
                 <NavLink to="/friends" activeClassName={s.active}>Мои друзья</NavLink>
             </div>
             <div className={s.item}>
-                <NavLink to="/friends" activeClassName={s.active}>Мое видео</NavLink>
+                <NavLink to="/video" activeClassName={s.active}>Мое видео</NavLink>
             </div>
             <div className={s.item}>
-                <NavLink to="/friends" activeClassName={s.active}>Моя музыка</NavLink>
+                <NavLink to="/music" activeClassName={s.active}>Моя музыка</NavLink>
             </div>
 
         </nav>
