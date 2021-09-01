@@ -18,7 +18,6 @@ function App(props: any) {
                 <div className="content_wrapper">
                     <div className="nav">
                         <Search title={'Поиск'}/>
-                        <Search title={'Поиск'}/>
                         <Navigation/>
                     </div>
                     <div className="profile">
