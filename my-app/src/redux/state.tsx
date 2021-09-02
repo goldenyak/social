@@ -1,3 +1,5 @@
+import {rerenderEntireTree} from "../render";
+
 export type DialogsPropsType = {
     name: string
     id: number
@@ -34,6 +36,7 @@ export let addPost = (postMessage: any) => {
         likesCount: 0
     };
     state.posts.push(newPost)
+    rerenderEntireTree()
 }
 
 export default state;

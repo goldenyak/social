@@ -1,5 +1,6 @@
 import React, {LegacyRef, RefObject} from "react";
 import add from './AddPosts.module.css';
+import {rerenderEntireTree} from "../../render";
 
 // export type AddPostsPropsType = {
 //     title: string
@@ -15,6 +16,7 @@ export function AddPosts(props: any) {
         if (addNewPost.current) {
             let text = addNewPost.current.value
             props.addPost(text)
+            addNewPost.current.value = '';
         }
     }
 
