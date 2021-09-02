@@ -36,7 +36,7 @@ export let addPost = (postMessage: any) => {
         likesCount: 0
     };
     state.posts.push(newPost)
-    rerenderEntireTree()
+    rerenderEntireTree(state)
 }
 
 export default state;
