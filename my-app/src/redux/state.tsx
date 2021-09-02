@@ -36,7 +36,5 @@ export let addPost = (postMessage: any) => {
     state.posts.push(newPost)
 }
 
-    export
-default
-state;
+export default state;
 
