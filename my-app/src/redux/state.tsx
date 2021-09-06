@@ -11,11 +11,14 @@ export type MessagePropsType = {
 }
 
 let state = {
-    posts: [
-        {id: 1, message: 'Привет, как дела?', likesCount: 5},
-        {id: 2, message: 'Меня зовут Егор', likesCount: 7},
-        {id: 3, message: 'Мне 33 года', likesCount: 9},
-    ],
+    profilePage: {
+        posts: [
+            {id: 1, message: 'Привет, как дела?', likesCount: 5},
+            {id: 2, message: 'Меня зовут Егор', likesCount: 7},
+            {id: 3, message: 'Мне 33 года', likesCount: 9},
+        ],
+        newPostText: 'it-kamasutra',
+    },
     dialogs: [
         {id: 1, name: 'Василий'},
         {id: 2, name: 'Александр'},
@@ -35,7 +38,7 @@ export let addPost = (postMessage: any) => {
         message: postMessage,
         likesCount: 0
     };
-    state.posts.push(newPost)
+    state.profilePage.posts.push(newPost)
     rerenderEntireTree(state)
 }
 

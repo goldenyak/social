@@ -22,7 +22,7 @@ export function AddPosts(props: any) {
 
     return (
         <div className={add.main_wrapper}>
-            <textarea className={add.textarea} ref={addNewPost} placeholder='Введите ваше сообщение'></textarea>
+            <textarea className={add.textarea} ref={addNewPost} placeholder='Введите ваше сообщение' value={props.newPostText}/>
             <button className={add.button} onClick={addPost}> Отправить</button>
         </div>
     )
