@@ -14,7 +14,7 @@ const Dialogs = (props: DialogsPropsType) => {
 
     return (
         <div className={d.mes}>
-            <Divider title={'Сообщения'}/>
+            <Divider dividerTitle={'Сообщения'}/>
             <div className={d.wrapper}>
                 <div className={d.users}>
                     {dialogsElements}

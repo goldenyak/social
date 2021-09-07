@@ -20,6 +20,10 @@ export function AddPosts(props: any) {
         }
     }
 
+    let onPostChange = () => {
+
+    }
+
     return (
         <div className={add.main_wrapper}>
             <textarea className={add.textarea} ref={addNewPost} placeholder='Введите ваше сообщение' value={props.newPostText}/>

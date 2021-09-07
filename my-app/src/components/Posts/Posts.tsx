@@ -6,7 +6,7 @@ import './Posts.css';
 export function Posts(props: any) {
     return (
         <div className='posts'>
-            <Divider title='Последние посты'/>
+            <Divider dividerTitle='Последние посты'/>
             <Area addPost={props.addPost}/>
         </div>
     )
