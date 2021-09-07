@@ -22,8 +22,10 @@ function App(props: any) {
                     </div>
                     <div className="profile">
                         <Route path='/profile' render={() => <Banner/>}/>
-                        <Route path='/profile' render={() => <Posts state={props.state.profilePage.posts} addPost={props.addPost}/>}/>
-                        <Route exact path='/dialogs' render={() => <Dialogs name={props.state.dialogs.name} id={props.state.dialogs.id}/>}/>
+                        <Route path='/profile' render={() => <Posts profilePage={props.state.profilePage}
+                                                                    addPost={props.addPost}/>}/>
+                        <Route exact path='/dialogs'
+                               render={() => <Dialogs name={props.state.dialogs.name} id={props.state.dialogs.id}/>}/>
                         <Route path='/music' render={() => <Banner/>}/>
 
 

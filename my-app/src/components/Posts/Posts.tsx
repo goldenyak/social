@@ -7,7 +7,7 @@ export function Posts(props: any) {
     return (
         <div className='posts'>
             <Divider dividerTitle='Последние посты'/>
-            <Area addPost={props.addPost}/>
+            <Area addPost={props.addPost} newPostText={props.profilePage.newPostText}/>
         </div>
     )
 }

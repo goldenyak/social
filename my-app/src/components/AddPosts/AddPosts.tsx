@@ -9,24 +9,27 @@ import {rerenderEntireTree} from "../../render";
 
 export function AddPosts(props: any) {
 
-    let addNewPost: RefObject<HTMLTextAreaElement> = React.createRef()
+    let newPostElement: RefObject<HTMLTextAreaElement> = React.createRef()
 
     let addPost = () => {
         debugger
-        if (addNewPost.current) {
-            let text = addNewPost.current.value
+        if (newPostElement.current) {
+            let text = newPostElement.current.value
             props.addPost(text)
-            addNewPost.current.value = '';
+            newPostElement.current.value = '';
         }
     }
 
     let onPostChange = () => {
 
+        // @ts-ignore
+        let text = newPostElement.current.value
+        console.log(text)
     }
 
     return (
         <div className={add.main_wrapper}>
-            <textarea className={add.textarea} ref={addNewPost} placeholder='Введите ваше сообщение' value={props.newPostText}/>
+            <textarea className={add.textarea} onChange={onPostChange} ref={newPostElement} placeholder='Введите ваше сообщение' value='it-kamasutra'/>
             <button className={add.button} onClick={addPost}> Отправить</button>
         </div>
     )
