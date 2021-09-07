@@ -7,7 +7,7 @@ import {NewPost} from "../NewPost/NewPost";
 export function Area(props: any) {
     return (
         <div className='area_wrapper'>
-            <AddPosts title={'Просто заглушка для типизации'} addPost={props.addPost}/>
+            <AddPosts addPost={props.addPost} updateNewPostText={props.updateNewPostText}/>
             <NewPost addPost={props.addPost}/>
         </div>
     )

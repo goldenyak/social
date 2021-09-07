@@ -6,6 +6,7 @@ import Search from './components/Search/Search';
 import Posts from './components/Posts/Posts';
 import Dialogs from "./components/Dialogs/Dialogs";
 import {BrowserRouter, Route} from 'react-router-dom';
+import {updateNewPostText} from "./redux/state";
 
 
 function App(props: any) {
@@ -23,7 +24,8 @@ function App(props: any) {
                     <div className="profile">
                         <Route path='/profile' render={() => <Banner/>}/>
                         <Route path='/profile' render={() => <Posts profilePage={props.state.profilePage}
-                                                                    addPost={props.addPost}/>}/>
+                                                                    addPost={props.addPost}
+                                                                    updateNewPostText={props.updateNewPostText}/>}/>
                         <Route exact path='/dialogs'
                                render={() => <Dialogs name={props.state.dialogs.name} id={props.state.dialogs.id}/>}/>
                         <Route path='/music' render={() => <Banner/>}/>
