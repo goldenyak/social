@@ -29,12 +29,15 @@ let state = {
         {id: 1, message: 'Hello'},
         {id: 2, message: 'How are you?'},
         {id: 3, message: 'Yo'},
-    ]
+    ],
 }
+// @ts-ignore
+window.state = state
+
 
 export let addPost = (postMessage: any) => {
     let newPost = {
-        id: 5,
+        id: 4,
         message: postMessage,
         likesCount: 0
     };
