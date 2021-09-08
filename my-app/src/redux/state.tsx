@@ -1,4 +1,4 @@
-import {rerenderEntireTree} from "../render";
+import any = jasmine.any;
 
 export type DialogsPropsType = {
     name: string
@@ -34,20 +34,29 @@ let state = {
 // @ts-ignore
 window.state = state
 
+let rerenderEntireTree = () => {
+    console.log('hello')
+}
 
-export let addPost = (postMessage: any) => {
+
+export const addPost = (postMessage: any) => {
     let newPost = {
         id: 4,
         message: postMessage,
         likesCount: 0
     };
     state.profilePage.posts.push(newPost)
-    rerenderEntireTree(state)
+    rerenderEntireTree()
 }
 
-export let updateNewPostText = (newText: any) => {
+export const updateNewPostText = (newText: any) => {
     state.profilePage.newPostText = newText
-    rerenderEntireTree(state)
+    rerenderEntireTree()
+}
+
+export const subscribe = (observer: any) => {
+    // @ts-ignore
+    rerenderEntireTree(observer)
 }
 
 export default state;
