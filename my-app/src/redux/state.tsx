@@ -32,7 +32,7 @@ let state = {
 // @ts-ignore
 window.state = state
 
-let rerenderEntireTree = () => {
+let rerenderEntireTree = (state: any) => {
     console.log('hello')
 }
 
@@ -44,12 +44,12 @@ export const addPost = (postMessage: any) => {
         likesCount: 0
     };
     state.profilePage.posts.push(newPost)
-    rerenderEntireTree()
+    rerenderEntireTree(state)
 }
 
 export const updateNewPostText = (newText: any) => {
     state.profilePage.newPostText = newText
-    rerenderEntireTree()
+    rerenderEntireTree(state)
 }
 
 export const subscribe = (observer: any) => {
