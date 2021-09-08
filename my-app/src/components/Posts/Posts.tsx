@@ -9,7 +9,7 @@ export function Posts(props: any) {
         <div className='posts'>
             <Divider dividerTitle='Последние посты'/>
             <Area addPost={props.addPost}
-                  newPostText={props.profilePage.newPostText}
+                  newPostText={props.state.newPostText}
                   updateNewPostText={props.updateNewPostText}/>
         </div>
     )

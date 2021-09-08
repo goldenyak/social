@@ -1,5 +1,3 @@
-import any = jasmine.any;
-
 export type DialogsPropsType = {
     name: string
     id: number
@@ -55,8 +53,7 @@ export const updateNewPostText = (newText: any) => {
 }
 
 export const subscribe = (observer: any) => {
-    // @ts-ignore
-    rerenderEntireTree(observer)
+    rerenderEntireTree = observer
 }
 
 export default state;
