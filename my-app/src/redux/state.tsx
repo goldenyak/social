@@ -30,7 +30,7 @@ let state = {
     ],
 }
 // @ts-ignore
-window.state = state
+window.state = state;
 
 let rerenderEntireTree = (state: any) => {
     console.log('hello')
